@@ -13,7 +13,13 @@ function sayHello(input) {
     }else {
         return "Hello, " + input + "!";
     }
+}
 
-
+function isFive(input){
+    if(input === 5){
+        return true;
+    } else {
+        return false;
+    }
 }
 
