@@ -8,6 +8,6 @@ function notHelloWorld(){
 }
 
 function sayHello(input) {
-    return "Hello," + input + "!";
+    return "Hello, " + input + "!";
 }
 
