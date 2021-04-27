@@ -32,18 +32,23 @@ function isEven(input){
 }
 
 function isVowel(input) {
-    // return /[aeiouAEIOU]/.test(input)
-console.log(typeof input);
-if (typeof input === "boolean"){
-    return false;
-}
-if (input?.toLowerCase() === "a" || input === "e" || input === "i" || input === "o" || input === "u"){
-    return true;
-}else{
-    return false;
-}
-}
+// if (typeof input === "boolean"){
+//     return false;
+// }
+// if (input?.toLowerCase() === "a" || input === "e" || input === "i" || input === "o" || input === "u"){
+//     return true;
+// }else{
+//     return false;
+// }
+    let vowels = ["a", "e", "i", "o", "u"]
 
-console.log(isVowel(false));
+    return typeof input === "string" && vowels.includes(input.toLowerCase())
+}
+isVowel();
+
+
+function add (num1,num2){
+    return num1 + num2;
+}
 
 

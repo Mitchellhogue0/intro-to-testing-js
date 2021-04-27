@@ -107,3 +107,17 @@ describe('isVowel', function() {
         expect(isVowel()).toBe(false);
     });
 });
+describe('add', function() {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe('function');
+    });
+    it('add(2,3) should return 5', function () {
+        expect(add(2,3)).toBe(5);
+    });
+    it('add(-3,-9) should return -12', function () {
+        expect(add(-3,-9)).toBe(-12);
+    });
+    it('add(,3) should return 5', function () {
+        expect(add(2,3)).toBe(5);
+    });
+});
