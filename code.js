@@ -31,4 +31,19 @@ function isEven(input){
     }
 }
 
-console.log(isEven(4))
+function isVowel(input) {
+    // return /[aeiouAEIOU]/.test(input)
+console.log(typeof input);
+if (typeof input === "boolean"){
+    return false;
+}
+if (input?.toLowerCase() === "a" || input === "e" || input === "i" || input === "o" || input === "u"){
+    return true;
+}else{
+    return false;
+}
+}
+
+console.log(isVowel(false));
+
+
