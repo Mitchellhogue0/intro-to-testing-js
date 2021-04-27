@@ -117,7 +117,19 @@ describe('add', function() {
     it('add(-3,-9) should return -12', function () {
         expect(add(-3,-9)).toBe(-12);
     });
-    it('add(,3) should return 5', function () {
-        expect(add(2,3)).toBe(5);
+    it('add("5",6) should return 11', function () {
+        expect(add("5",6)).toBe(11);
+    });
+    it('add("-4","10") should return 6', function () {
+        expect(add("-4","10")).toBe(6);
+    });
+    it('add("banana","split") should return NaN', function () {
+        expect(add("banana","split")).toBeNaN(NaN);
+    });
+    it('add(2,"apples") should return NaN', function () {
+        expect(add(2,"apples")).toBeNaN(NaN);
+    });
+    it('add() should return NaN', function () {
+        expect(add()).toBeNaN(NaN);
     });
 });
